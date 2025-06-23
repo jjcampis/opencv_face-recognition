@@ -8,7 +8,7 @@ arduino = serial.Serial('COM4', 9600, timeout=1)
 time.sleep(2)
 
 # ==== Imagen de referencia ====
-image = cv2.imread("images/jj.jpg")
+image = cv2.imread("images/JJ.jpg")
 face_loc = face_recognition.face_locations(image)[0]
 face_image_encodings = face_recognition.face_encodings(image, known_face_locations=[face_loc])[0]
 print("face_image_encodings:", face_image_encodings) # imprimir los valores en consola
